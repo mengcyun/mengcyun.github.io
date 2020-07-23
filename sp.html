@@ -1,8 +1,8 @@
-<video class="margin" autoplay="autoplay" width="90%" id="videoId"><source src="sp.mp4" type="video/mp4"></video>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $("#videoId").bind(��ended��, function(){
-        location.href="https://space.bilibili.com/3244791";
-        });
-    });
-</script>
+<video id="MyVideo" src="sp.mp4" autoplay muted controls style="width:100%;display:block;margin:0px auto;height:auto"></video>
+
+<script>
+            myVid=document.getElementById("MyVideo");
+            myVid.addEventListener('ended',function(){
+                window.location.href="https://space.bilibili.com/3244791";
+            });
+        </script>
